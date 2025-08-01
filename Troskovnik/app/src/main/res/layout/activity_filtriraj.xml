@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Filtriraj">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="145dp"
+        android:layout_height="23dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="0dp"
+        android:text="Iznos :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputOd"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Od"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <EditText
+        android:id="@+id/inputDo"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_toEndOf="@+id/inputOd"
+        android:ems="10"
+        android:hint="Do"
+        android:inputType="phone"
+        app:layout_constraintStart_toEndOf="@+id/inputOd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textIzaberiDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputOd"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="27dp"
+        android:text="Datum od :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputOd" />
+
+    <Button
+        android:id="@+id/buttonOtvoriKalendar"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textIzaberiDatum"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Otvori kalendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textIzaberiDatum" />
+
+    <Button
+        android:id="@+id/buttonFiltriraj"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textIzaberiDatum2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="33dp"
+        android:layout_toEndOf="@+id/buttonOtvoriKalendar"
+        android:text="Filtriraj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOtvoriKalendar" />
+
+    <ScrollView
+        android:layout_width="381dp"
+        android:layout_height="537dp"
+        android:layout_below="@+id/buttonFiltriraj"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="0dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/scrollViewFiltriraj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textIzaberiDatum2"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputDo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="48dp"
+        android:text="Datum do :" />
+
+</RelativeLayout>

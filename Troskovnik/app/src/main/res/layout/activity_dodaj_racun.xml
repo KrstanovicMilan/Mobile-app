@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DodajRacun">
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="164dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#64C2A3"
+        android:text="Rucni unos"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/skenQR"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="Skeniraj QR kod"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toEndOf="@+id/test"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Naziv Prodavca"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="372dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/inputNazivProdavca"
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@+id/textView6"
+                android:ems="10"
+                android:inputType="textPersonName"
+                 />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="16dp"
+                android:text="Naziv prodavca :" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="PIB :" />
+
+            <EditText
+                android:id="@+id/inputPIB"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputNazivProdavca"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="26dp"
+                android:layout_toEndOf="@+id/textView8"
+                android:ems="10"
+                android:inputType="phone"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="47dp"
+                android:text="Adresa :" />
+
+            <EditText
+                android:id="@+id/inputAdresa"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputPIB"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="27dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView10"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="40dp"
+                android:text="Grad : " />
+
+            <EditText
+                android:id="@+id/inputGrad"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputAdresa"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="27dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView11"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="40dp"
+                android:text="Iznos :" />
+
+            <EditText
+                android:id="@+id/inputIznos"
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputGrad"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="27dp"
+                android:ems="10"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="69dp"
+                android:text="Datum : " />
+
+            <DatePicker
+                android:id="@+id/inputDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="139dp"
+                android:layout_below="@+id/inputIznos"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="25dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginBottom="23dp"
+                android:text="PFR broj : " />
+
+            <EditText
+                android:id="@+id/inputPFR"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputDatePicker"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginBottom="23dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonSacuvajRacun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="164dp"
+        android:text="Sacuvaj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
